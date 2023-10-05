@@ -1,2 +1,2 @@
 # MarioKart2DOleksandr
- Futuregames assignment, student Oleksandr Yakymenko
+by Oleksandr Yakymenko
