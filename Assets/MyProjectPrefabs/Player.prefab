@@ -224,8 +224,24 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 28770c33-a888-488a-9128-53246e8c0c6d
     m_ActionName: CarMovement/Turn[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 19d80819-42bf-4de7-a0a6-acd8b871d139
+    m_ActionName: CarMovementPlayer1/Brake[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8781c4dd-4f50-414b-9c93-39e39b4541af
+    m_ActionName: CarMovementPlayer2/MoveForward[/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9d8736db-6b44-45ad-931c-0abb6aa516f1
+    m_ActionName: CarMovementPlayer2/Turn[/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4bd24ae9-a6fd-4a2e-90e5-6995e410ec7a
+    m_ActionName: CarMovementPlayer2/Brake[/Keyboard/downArrow]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: CarMovement
+  m_DefaultControlScheme: Keyboard
+  m_DefaultActionMap: CarMovementPlayer1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
