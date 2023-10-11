@@ -1,14 +1,14 @@
 {
-    "name": "ControlActionMap",
+    "name": "Map",
     "maps": [
         {
-            "name": "CarMovementPlayer1",
-            "id": "769b659c-9cb8-4b3e-bb94-d2ebfbd2301b",
+            "name": "Main",
+            "id": "3c6b3bb7-eab5-4b92-a891-b29bb39b88a5",
             "actions": [
                 {
-                    "name": "MoveForward",
+                    "name": "Accelerate",
                     "type": "Button",
-                    "id": "b59e20c3-6c03-456f-8c5f-e2cb3242901e",
+                    "id": "805f3061-ea4d-4f8d-8bc9-f63bcf2d28f1",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -17,7 +17,7 @@
                 {
                     "name": "Turn",
                     "type": "Button",
-                    "id": "28770c33-a888-488a-9128-53246e8c0c6d",
+                    "id": "9246b416-4dd3-463f-ad3a-017722bf8986",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -26,7 +26,7 @@
                 {
                     "name": "Brake",
                     "type": "Button",
-                    "id": "19d80819-42bf-4de7-a0a6-acd8b871d139",
+                    "id": "178be44d-b9d3-46be-a266-34684f872d54",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -35,7 +35,7 @@
                 {
                     "name": "Boost",
                     "type": "Button",
-                    "id": "e9bffb29-ba0c-402b-9329-2e3b20473f77",
+                    "id": "d8255bb9-0573-4a0b-9560-af216fa46242",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -44,8 +44,19 @@
             ],
             "bindings": [
                 {
+                    "name": "",
+                    "id": "c5c2270e-902d-4e4c-922a-01cc01ade6f5",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
-                    "id": "daa716c2-bdfa-49f6-8d37-db8dc5c4a8d5",
+                    "id": "849ff6c7-5320-4a27-9502-db971a78e2eb",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -56,69 +67,58 @@
                 },
                 {
                     "name": "negative",
-                    "id": "a2c2e3d8-46ad-494c-b1d4-66d7e039611f",
+                    "id": "7e28b49a-db6a-42fd-b159-1132ada35c1c",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "b31d8f10-1c4c-4db3-9418-2256ec15c137",
+                    "id": "586b2b69-2cf3-4822-bbe7-c53893a0373c",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "5e3b2ad4-82b3-4718-9a17-0b7fd02d2e3f",
+                    "id": "16195865-b608-4c46-9356-26c978d32840",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "0d555b37-9365-426c-84e4-b5541f0ba1f0",
+                    "id": "7d023f4f-8a4d-456f-9e70-e25d11dfc9be",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Boost",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "14cce4dc-035a-4dc2-9dad-9f3c43d95375",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "CarMovementPlayer2",
-            "id": "c23058ae-312c-4186-bed5-07a6a12162e4",
+            "name": "Second",
+            "id": "2513f3b4-4e04-46a0-9063-3cd8038cb85f",
             "actions": [
                 {
-                    "name": "MoveForward",
+                    "name": "Accelerate",
                     "type": "Button",
-                    "id": "8781c4dd-4f50-414b-9c93-39e39b4541af",
+                    "id": "74af7017-8d31-450a-946d-721533282c5e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -127,7 +127,7 @@
                 {
                     "name": "Turn",
                     "type": "Button",
-                    "id": "9d8736db-6b44-45ad-931c-0abb6aa516f1",
+                    "id": "f439dd5b-bfd3-4ec4-b218-89c67ea28b39",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -136,7 +136,7 @@
                 {
                     "name": "Brake",
                     "type": "Button",
-                    "id": "4bd24ae9-a6fd-4a2e-90e5-6995e410ec7a",
+                    "id": "41716a3d-1f3c-4fca-8720-faffe7981d3c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -145,7 +145,7 @@
                 {
                     "name": "Boost",
                     "type": "Button",
-                    "id": "86ac1ed4-42c7-431b-8b08-a0176159d805",
+                    "id": "af28ac8d-e9d9-453c-b7dd-a499b5b0927c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -155,18 +155,18 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "8d7a009a-5157-4817-abad-6ac5db2d7fc7",
+                    "id": "093cf594-2497-4800-a0bb-1280ddfa3638",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "MoveForward",
+                    "groups": "",
+                    "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "1D Axis",
-                    "id": "44b6b443-1d27-44b3-9e93-24cd92f0a299",
+                    "id": "7ea41293-730c-46d0-bf1b-87399a357727",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -177,44 +177,44 @@
                 },
                 {
                     "name": "negative",
-                    "id": "fd601d95-15d9-40c7-a303-73f6ffd4b7d3",
+                    "id": "1c65a85a-6657-4292-b20b-f1862fd1235a",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "6369f799-2b93-452f-87b2-04c1745d70c4",
+                    "id": "c423747d-db7c-4f28-a40e-27e186ed436f",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "d0a08052-9eb3-4ca2-ac4a-2dd8e895072e",
+                    "id": "65446205-94f7-49cd-b194-1a676bea4e51",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "0c8df9dc-f3b8-47be-aba3-8ccec81c67cc",
+                    "id": "3430c9ec-84b7-4ec6-95bb-9ae23ea2ec35",
                     "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -222,17 +222,5 @@
             ]
         }
     ],
-    "controlSchemes": [
-        {
-            "name": "Keyboard",
-            "bindingGroup": "Keyboard",
-            "devices": [
-                {
-                    "devicePath": "<Keyboard>",
-                    "isOptional": true,
-                    "isOR": false
-                }
-            ]
-        }
-    ]
+    "controlSchemes": []
 }

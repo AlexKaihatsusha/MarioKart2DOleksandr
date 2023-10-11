@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private int _currentLap = 0;
     private int _nextCheckpoint = 1;
     //---------------------------------
-    public static PlayerBoostComponent boostComponent;
+    public PlayerBoostComponent boostComponent;
     
     //------------GetFuncitons--------------
     public int GetCurrentLap()
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
     {
         if(callbackContext.phase==InputActionPhase.Performed)
         {
-            Debug.Log("MoveForward was pressed");
+            //Debug.Log("MoveForward was pressed");
             _bMoveForwardInput = true;
         }
         else
