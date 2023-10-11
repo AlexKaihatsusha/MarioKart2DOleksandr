@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
     {
         if(callbackContext.phase==InputActionPhase.Performed)
         {
-            Debug.Log("MoveForward was pressed");
+            //Debug.Log("MoveForward was pressed");
             _bMoveForwardInput = true;
         }
         else
