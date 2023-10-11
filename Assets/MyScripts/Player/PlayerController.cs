@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         return _currentLap;
     }
     //--------------------------------------
-    //----------------UnityFunctionUsing-----------------
+    //----------------UnityFunctionUsing--------------------------------------------------------
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -75,12 +75,10 @@ public class PlayerController : MonoBehaviour
         
         if (_bBoostInput && boostComponent.IsBoostEmpty())
         {
-            rig2D.AddForce(transform.up * boostComponent.ActivateBoost(speed) , ForceMode2D.Force);    
+            rig2D.AddForce(transform.up * boostComponent.Boost(speed) , ForceMode2D.Force);    
         }
         
     }
-
-  
     private void OnTriggerEnter2D(Collider2D other)
     {
         //get a reference of Checkpoint class
@@ -105,7 +103,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    //----------------------------------------------------
+    //-------------------------------------------------------------------------------------------
    
     //---------------------------InputSystemFunctions------------------------
     public void OnMoveForward(InputAction.CallbackContext callbackContext)

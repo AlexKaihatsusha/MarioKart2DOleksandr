@@ -22,16 +22,14 @@ public class RaceManager : MonoBehaviour
     }
     
     
-    //create instance of raceManager to call it in PlayerController class
+
+    //----------------UnityFunctionUsing--------------------------------------------------------
+    //create an instance of raceManager to call it in PlayerController class
     public void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 
@@ -42,7 +40,7 @@ public class RaceManager : MonoBehaviour
             _players[0] = FindObjectOfType<PlayerController>();
         }
     }
-
+   //------------------------------------------------------------------------------------------
     public void CheckWinPlayer(PlayerController player)
     {
         if (player.GetCurrentLap() >= _lapsToWin)
@@ -50,6 +48,5 @@ public class RaceManager : MonoBehaviour
             Debug.Log($"{player.name} WIN!");
             Time.timeScale = 0.0f;
         }
-        
     }
 }

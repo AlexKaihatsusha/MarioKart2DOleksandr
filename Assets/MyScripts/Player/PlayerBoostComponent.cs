@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerBoostComponent : MonoBehaviour
 {
+    [Header("[CarBoostData]")]
     public int boostAmount = 50;
     public float boostMultiplier = 2;
     public int boostConsumptionRate = 5;
@@ -14,6 +15,7 @@ public class PlayerBoostComponent : MonoBehaviour
         currentBoostAmount = boostAmount;
     }
 
+    
     public float GetCurrentBoostAmount()
     {
         return currentBoostAmount;
@@ -23,7 +25,7 @@ public class PlayerBoostComponent : MonoBehaviour
         return currentBoostAmount > 0f;
     }
 
-    public float ActivateBoost(float currentVelocity)
+    public float Boost(float currentVelocity)
     {
         if (IsBoostEmpty())
         {

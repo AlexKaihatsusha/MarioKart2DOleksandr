@@ -1,5 +1,5 @@
 {
-    "name": "ControlActionMap",
+    "name": "ControlActionMapTEST",
     "maps": [
         {
             "name": "CarMovementPlayer1",
@@ -36,6 +36,42 @@
                     "name": "Boost",
                     "type": "Button",
                     "id": "e9bffb29-ba0c-402b-9329-2e3b20473f77",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveForwardPlayer2",
+                    "type": "Button",
+                    "id": "9ce587a1-f8b0-4acf-b404-6e9ad26b633d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TurnPlayer2",
+                    "type": "Button",
+                    "id": "e118aa74-2ba5-49de-9a9e-a5ff178167a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BrakePlayer2",
+                    "type": "Button",
+                    "id": "67b5030d-de43-47ba-abbf-2cfb3e01bd41",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlayerBoost2",
+                    "type": "Button",
+                    "id": "bf55855a-3398-4232-a155-1b22b59611de",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -108,94 +144,70 @@
                     "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "CarMovementPlayer2",
-            "id": "c23058ae-312c-4186-bed5-07a6a12162e4",
-            "actions": [
-                {
-                    "name": "MoveForward",
-                    "type": "Button",
-                    "id": "8781c4dd-4f50-414b-9c93-39e39b4541af",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 },
-                {
-                    "name": "Turn",
-                    "type": "Button",
-                    "id": "9d8736db-6b44-45ad-931c-0abb6aa516f1",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Brake",
-                    "type": "Button",
-                    "id": "4bd24ae9-a6fd-4a2e-90e5-6995e410ec7a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
                 {
                     "name": "",
-                    "id": "8d7a009a-5157-4817-abad-6ac5db2d7fc7",
+                    "id": "4b662496-dbdd-486a-b1cb-45de2dc77eb9",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "MoveForward",
+                    "groups": "KeyboardRight",
+                    "action": "MoveForwardPlayer2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "1D Axis",
-                    "id": "44b6b443-1d27-44b3-9e93-24cd92f0a299",
+                    "id": "268fcab1-3315-4e86-8103-9e9d3e394af4",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Turn",
+                    "action": "TurnPlayer2",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "negative",
-                    "id": "fd601d95-15d9-40c7-a303-73f6ffd4b7d3",
-                    "path": "<Keyboard>/leftArrow",
+                    "id": "83a6b7fa-e525-418b-a97a-065ba7742405",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Turn",
+                    "groups": "KeyboardRight",
+                    "action": "TurnPlayer2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "6369f799-2b93-452f-87b2-04c1745d70c4",
-                    "path": "<Keyboard>/rightArrow",
+                    "id": "9243612d-2681-458f-80dd-afd37f929e5d",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Turn",
+                    "groups": "KeyboardRight",
+                    "action": "TurnPlayer2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "d0a08052-9eb3-4ca2-ac4a-2dd8e895072e",
+                    "id": "16fbecaa-849a-4db3-9187-41d47c680ded",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardRight",
+                    "action": "PlayerBoost2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "abc8fa06-12b1-48e7-8731-bc3c32e1e381",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Brake",
+                    "groups": "KeyboardRight",
+                    "action": "BrakePlayer2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -213,6 +225,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "KeyboardRight",
+            "bindingGroup": "KeyboardRight",
+            "devices": []
         }
     ]
 }
