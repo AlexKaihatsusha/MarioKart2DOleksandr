@@ -44,17 +44,6 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "14cce4dc-035a-4dc2-9dad-9f3c43d95375",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "MoveForward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
                     "id": "daa716c2-bdfa-49f6-8d37-db8dc5c4a8d5",
                     "path": "1DAxis",
@@ -108,6 +97,17 @@
                     "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14cce4dc-035a-4dc2-9dad-9f3c43d95375",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -119,15 +119,6 @@
                     "name": "MoveForward",
                     "type": "Button",
                     "id": "8781c4dd-4f50-414b-9c93-39e39b4541af",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Boost",
-                    "type": "Button",
-                    "id": "86ac1ed4-42c7-431b-8b08-a0176159d805",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -150,6 +141,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Boost",
+                    "type": "Button",
+                    "id": "86ac1ed4-42c7-431b-8b08-a0176159d805",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -159,7 +159,7 @@
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardRight",
+                    "groups": "Keyboard",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -181,7 +181,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardRight",
+                    "groups": "Keyboard",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -192,7 +192,7 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardRight",
+                    "groups": "Keyboard",
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -203,7 +203,7 @@
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardRight",
+                    "groups": "Keyboard",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -214,7 +214,7 @@
                     "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardRight",
+                    "groups": "Keyboard",
                     "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -233,11 +233,6 @@
                     "isOR": false
                 }
             ]
-        },
-        {
-            "name": "KeyboardRight",
-            "bindingGroup": "KeyboardRight",
-            "devices": []
         }
     ]
 }
