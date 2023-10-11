@@ -19399,6 +19399,7 @@ MonoBehaviour:
   rig2D: {fileID: 3799387941477320362}
   carModel: {fileID: 281257495535641635}
   maxCheckpointNumber: 3
+  boostComponent: {fileID: 6096760095808083362}
 --- !u!114 &6096760095808083362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19501,6 +19502,7 @@ MonoBehaviour:
   rig2D: {fileID: 2331030121568382508}
   carModel: {fileID: 4064100746972822686}
   maxCheckpointNumber: 3
+  boostComponent: {fileID: 3482970317090163478}
 --- !u!61 &7156822133843399970
 BoxCollider2D:
   m_ObjectHideFlags: 0
